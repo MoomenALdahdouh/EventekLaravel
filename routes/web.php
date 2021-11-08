@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,5 +20,9 @@ Route::get('/', function () {
 });
 
 Route::get('/admin', function () {
-    return view('admin/index');
+    return view('index');
+});
+
+Route::get('/categories', function () {
+    return Category::get();
 });
