@@ -20,10 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("user", [UserController::class, 'getList']);
-
-Route::get("user/{id}", [UserController::class, 'getItem']);
-
 Route::get('category', [CategoryController::class, 'all']);
 
 Route::get('category/{id}', [CategoryController::class, 'category']);
