@@ -31,3 +31,5 @@ Route::put('category/edit/{id}', [CategoryController::class, 'edit']);
 Route::get('category/search/{string}', [CategoryController::class, 'search']);
 
 Route::delete('category/delete/{string}', [CategoryController::class, 'delete']);
+
+//sdfklnsdjk
