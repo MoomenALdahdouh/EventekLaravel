@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -15,6 +17,8 @@ class ServiceController extends Controller
     public function index()
     {
         //
+        return Service::all();
+
     }
 
     /**
@@ -25,6 +29,8 @@ class ServiceController extends Controller
     public function create()
     {
         //
+
+        echo 'Add the service';
     }
 
     /**
@@ -44,9 +50,15 @@ class ServiceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id = null)
     {
         //
+        return $id ? Service::find($id) : Service::all();//If and Else  if find category with this id get it else get all categories
+
+    }
+
+    function search($string){
+        return Category::where("name", "like","%".$string."%")->get();
     }
 
     /**
