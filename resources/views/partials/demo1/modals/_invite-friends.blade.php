@@ -1,4 +1,4 @@
-		
+
 		<!--begin::Modal - Invite Friends-->
 		<div class="modal fade" id="kt_modal_invite_friends" tabindex="-1" aria-hidden="true">
 			<!--begin::Modal dialog-->
@@ -46,7 +46,7 @@
 						<!--begin::Textarea-->
 						<textarea class="form-control form-control-solid mb-8" rows="3" placeholder="Type or paste emails here"></textarea>
 						<!--end::Textarea-->
-						<!--begin::Users-->
+						<!--begin::User-->
 						<div class="mb-10">
 							<!--begin::Heading-->
 							<div class="fs-6 fw-bold mb-2">Your Invitations</div>
@@ -532,7 +532,7 @@
 							</div>
 							<!--end::List-->
 						</div>
-						<!--end::Users-->
+						<!--end::User-->
 						<!--begin::Notice-->
 						<div class="d-flex flex-stack">
 							<!--begin::Label-->
@@ -557,4 +557,3 @@
 			<!--end::Modal dialog-->
 		</div>
 		<!--end::Modal - Invite Friend-->
-		

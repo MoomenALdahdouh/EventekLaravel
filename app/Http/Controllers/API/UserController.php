@@ -5,10 +5,11 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Service;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
-class ServiceController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -30,8 +31,6 @@ class ServiceController extends Controller
     public function create()
     {
         //
-
-        echo 'Add the service';
     }
 
     /**
@@ -43,23 +42,30 @@ class ServiceController extends Controller
     public function store(Request $request)
     {
         //
-
         /*$data = array();
         $data['category_name'] = $request->category_name;
         $data['user_id'] = Auth::user()->id;
         $data['created_at'] = Carbon::now();
         DB::table('categories')->insert($data);*/
-        $category = new Service();
-        $category->name = $request->name;
-        $category->description = $request->description;
-        $category->image = $request->image;
-        $category->statuss = $request->statuss;
-        $category->date_of_create = Carbon::now();
-        $result = $category->save();
+        $Users = new User();
+        $Users->remember_token = $request->remember_token;
+        $Users->first_name = $request->first_name;
+        $Users->second_name = $request->second_name;
+        $Users->email = $request->email;
+        $Users->email_verified_at = $request->email_verified_at;
+        $Users->phone = $request->phone;
+        $Users->password = $request->password;
+        $Users->image = $request->image;
+        $Users->type = $request->type;
+        $Users->address = $request->address;
+        $Users->date_of_create = Carbon::now();
+        $Users->updated_at = $request->updated_at;
+        $Users->status = $request->status;
+        $result = $Users->save();
         if ($result)
-            return ["Result" => "Category added Successfully"];
+            return ["Result" => "User added Successfully"];
         else
-            return ["Result" => "Failed to add"];
+            return ["Result" => "Failed to add User"];
     }
 
     /**
@@ -71,12 +77,8 @@ class ServiceController extends Controller
     public function show($id = null)
     {
         //
-        return $id ? Service::find($id) : Service::all();//If and Else  if find category with this id get it else get all categories
+        return $id ? User::find($id) : User::all();//If and Else  if find category with this id get it else get all categories
 
-    }
-
-    function search($string){
-        return Category::where("name", "like","%".$string."%")->get();
     }
 
     /**
@@ -88,6 +90,7 @@ class ServiceController extends Controller
     public function edit($id)
     {
         //
+
     }
 
     /**
@@ -100,6 +103,17 @@ class ServiceController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $category = Category::find($id);
+        $category->name = $request->name;
+        $category->description = $request->description;
+        $category->image = $request->image;
+        $category->statuss = $request->statuss;
+        $category->date_of_create = Carbon::now();
+        $result = $category->save();
+        if ($result)
+            return ["Result" => "Category update Successfully"];
+        else
+            return ["Result" => "Failed to update"];
     }
 
     /**

@@ -1495,7 +1495,7 @@ License: For each use you must have a valid license purchased only from above li
 														<!--end::Suggestions-->
 														<!--begin::Results-->
 														<div data-kt-search-element="results" class="d-none">
-															<!--begin::Users-->
+															<!--begin::User-->
 															<div class="mh-300px scroll-y me-n5 pe-5">
 																<!--begin::User-->
 																<div class="d-flex align-items-center p-3 rounded-3 border-hover border border-dashed border-gray-300 cursor-pointer mb-1" data-kt-search-element="customer">
@@ -1648,7 +1648,7 @@ License: For each use you must have a valid license purchased only from above li
 																</div>
 																<!--end::User-->
 															</div>
-															<!--end::Users-->
+															<!--end::User-->
 														</div>
 														<!--end::Results-->
 														<!--begin::Empty-->

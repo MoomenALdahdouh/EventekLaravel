@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\CategoryController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\ServiceController ;
@@ -20,6 +20,25 @@ use App\Http\Controllers\API\ServiceController ;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+Route::prefix('users')->group(function () {
+
+    Route::get('/', [ServiceController::class, 'index']);
+
+    Route::get('/{id}', [ServiceController::class, 'show']);
+
+    Route::post('add', [UserController::class, 'store']);
+
+    Route::put('edit/{id}', [ServiceController::class, 'update']);
+
+    Route::get('search/{string}', [ServiceController::class, 'search']);
+
+    Route::delete('delete/{id}', [ServiceController::class, 'destroy']);
+
+});
+
 
 Route::prefix('service')->group(function () {
 

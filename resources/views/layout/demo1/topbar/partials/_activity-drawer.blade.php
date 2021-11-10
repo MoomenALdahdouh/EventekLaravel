@@ -78,7 +78,7 @@
 												<span class="badge badge-light text-muted">Application Design</span>
 											</div>
 											<!--end::Label-->
-											<!--begin::Users-->
+											<!--begin::User-->
 											<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px pe-2">
 												<!--begin::User-->
 												<div class="symbol symbol-circle symbol-25px">
@@ -96,7 +96,7 @@
 												</div>
 												<!--end::User-->
 											</div>
-											<!--end::Users-->
+											<!--end::User-->
 											<!--begin::Progress-->
 											<div class="min-w-125px pe-2">
 												<span class="badge badge-light-primary">In Progress</span>
@@ -117,7 +117,7 @@
 												<span class="badge badge-light text-muted">CRM System Development</span>
 											</div>
 											<!--end::Label-->
-											<!--begin::Users-->
+											<!--begin::User-->
 											<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px">
 												<!--begin::User-->
 												<div class="symbol symbol-circle symbol-25px">
@@ -130,7 +130,7 @@
 												</div>
 												<!--end::User-->
 											</div>
-											<!--end::Users-->
+											<!--end::User-->
 											<!--begin::Progress-->
 											<div class="min-w-125px">
 												<span class="badge badge-light-success">Completed</span>

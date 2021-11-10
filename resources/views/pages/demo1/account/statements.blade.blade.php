@@ -6348,7 +6348,7 @@ License: For each use you must have a valid license purchased only from above li
 												<span class="badge badge-light text-muted">Application Design</span>
 											</div>
 											<!--end::Label-->
-											<!--begin::Users-->
+											<!--begin::User-->
 											<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px pe-2">
 												<!--begin::User-->
 												<div class="symbol symbol-circle symbol-25px">
@@ -6366,7 +6366,7 @@ License: For each use you must have a valid license purchased only from above li
 												</div>
 												<!--end::User-->
 											</div>
-											<!--end::Users-->
+											<!--end::User-->
 											<!--begin::Progress-->
 											<div class="min-w-125px pe-2">
 												<span class="badge badge-light-primary">In Progress</span>
@@ -6387,7 +6387,7 @@ License: For each use you must have a valid license purchased only from above li
 												<span class="badge badge-light text-muted">CRM System Development</span>
 											</div>
 											<!--end::Label-->
-											<!--begin::Users-->
+											<!--begin::User-->
 											<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px">
 												<!--begin::User-->
 												<div class="symbol symbol-circle symbol-25px">
@@ -6400,7 +6400,7 @@ License: For each use you must have a valid license purchased only from above li
 												</div>
 												<!--end::User-->
 											</div>
-											<!--end::Users-->
+											<!--end::User-->
 											<!--begin::Progress-->
 											<div class="min-w-125px">
 												<span class="badge badge-light-success">Completed</span>
@@ -7665,7 +7665,7 @@ License: For each use you must have a valid license purchased only from above li
 						<!--begin::Textarea-->
 						<textarea class="form-control form-control-solid mb-8" rows="3" placeholder="Type or paste emails here"></textarea>
 						<!--end::Textarea-->
-						<!--begin::Users-->
+						<!--begin::User-->
 						<div class="mb-10">
 							<!--begin::Heading-->
 							<div class="fs-6 fw-bold mb-2">Your Invitations</div>
@@ -8151,7 +8151,7 @@ License: For each use you must have a valid license purchased only from above li
 							</div>
 							<!--end::List-->
 						</div>
-						<!--end::Users-->
+						<!--end::User-->
 						<!--begin::Notice-->
 						<div class="d-flex flex-stack">
 							<!--begin::Label-->
